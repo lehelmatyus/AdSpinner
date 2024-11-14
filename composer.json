@@ -5,8 +5,11 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Lehelmatyus\\Adspinner\\": "src/"
-        }
+            "Adspinner\\": "src/"
+        },
+        "files": [
+            "src/Adspinner.php"
+        ]
     },
     "authors": [
         {
