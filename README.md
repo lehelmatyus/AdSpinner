@@ -33,8 +33,17 @@ composer install
 
 ## Usage example
 
+
+Includ in your project
+
+```
+require_once __DIR__ . '/vendor/autoload.php';
+```
+
+Set up JSON for images
+
  ```
-// Example usage:
+// Example JSON:
 $ads_json = '{
     "ads": [
         {
@@ -62,6 +71,8 @@ $ads_json = '{
 }';
 
 ```
+
+Start Spinning Images!
 
 ```
 $ad_spinner = new AdSpinner($ads_json);
