@@ -2,6 +2,7 @@
     "name": "lehelmatyus/adspinner",
     "description": "Rotates randomly between a set of images. takes a JSON object as input.",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Lehelmatyus\\Adspinner\\": "src/"
@@ -13,5 +14,7 @@
             "email": "contact@lehelmatyus.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.4"
+    }
 }
