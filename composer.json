@@ -1,0 +1,17 @@
+{
+    "name": "lehelmatyus/adspinner",
+    "description": "Rotates randomly between a set of images. takes a JSON object as input.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Lehelmatyus\\Adspinner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lehel Matyus",
+            "email": "contact@lehelmatyus.com"
+        }
+    ],
+    "require": {}
+}
