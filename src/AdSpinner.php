@@ -1,7 +1,7 @@
 <?php
 
-use AdSpinner\Model\AdSpnrModel;
-use AdSpinner\Service\AdSpnrService;
+use AdSpinner\Model\AdSpinnerModel;
+use AdSpinner\Service\AdSpinnerService;
 
 class AdSpinner {
     private $ads = [];
@@ -13,10 +13,10 @@ class AdSpinner {
         }
 
         foreach ($ads_data['ads'] as $ad_data) {
-            $this->ads[] = new AdSpnrModel($ad_data);
+            $this->ads[] = new AdSpinnerModel($ad_data);
 
-            if (!$this->ads[count($this->ads) - 1] instanceof AdSpnrModel) {
-                throw new RuntimeException('Failed to create AdSpnrModel instance');
+            if (!$this->ads[count($this->ads) - 1] instanceof AdSpinnerModel) {
+                throw new RuntimeException('Failed to create AdSpinnerModel instance');
             }
         }
     }
@@ -24,7 +24,7 @@ class AdSpinner {
     public function spin() {
         $random_index = array_rand($this->ads);
         $ad = $this->ads[$random_index];
-        return AdSpnrService::renderAdHtml($ad);
+        return AdSpinnerService::renderAdHtml($ad);
     }
 }
 

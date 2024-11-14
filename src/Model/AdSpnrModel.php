@@ -2,7 +2,7 @@
 
 namespace AdSpinner\Model;
 
-class AdSpnrModel {
+class AdSpinnerModel {
     public $link;
     public $image;
     public $alt;

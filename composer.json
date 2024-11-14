@@ -5,10 +5,10 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Adspinner\\": "src/"
+            "AdSpinner\\": "src/"
         },
         "files": [
-            "src/Adspinner.php"
+            "src/AdSpinner.php"
         ]
     },
     "authors": [

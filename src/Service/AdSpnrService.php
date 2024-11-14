@@ -2,10 +2,10 @@
 
 namespace AdSpinner\Service;
 
-use AdSpinner\Model\AdSpnrModel;
+use AdSpinner\Model\AdSpinnerModel;
 
-class AdSpnrService {
-    public static function renderAdHtml(AdSpnrModel $ad) {
+class AdSpinnerService {
+    public static function renderAdHtml(AdSpinnerModel $ad) {
         $html = '<a href="' . $ad->link . '" target="_blank">';
         $html .= '<img src="' . $ad->image . '" alt="' . $ad->alt . '" width="' . $ad->width . '" height="' . $ad->height . '">';
         $html .= '</a>';
