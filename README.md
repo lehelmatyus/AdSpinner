@@ -75,6 +75,29 @@ $ads_json = '{
 Start Spinning Images!
 
 ```
+$ads_json = '{
+    "ads": [
+        ...
+    ]
+}';
+
 $ad_spinner = new AdSpinner($ads_json);
 echo $ad_spinner->spin();
+
+// print more than one
+echo $ad_spinner->spin(2);
+```
+
+Spin with a template
+
+```
+$templateService = new AdSpinnerTemplateService();
+// pass your template string
+$templateService->setTemplate('<a href="%link%" target="_blank"><img src="%image%" alt="%alt%" width="%width%" height="%height%"></a>');
+
+$ad_spinner = new AdSpinner($ads_json);
+echo "<div class='adspinner'>";
+echo $ad_spinner->spin(1, $templateService);
+echo "</div>";
+
 ```
